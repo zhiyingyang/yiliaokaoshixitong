@@ -13,7 +13,7 @@ import android.widget.FrameLayout;
 public class AndroidBug5497Workaround {
 
     // For more information, see https://code.google.com/p/android/issues/detail?id=5497
-    // To use this clas  s, simply invoke assistActivity() on an Activity that already has its content view set.
+    // To use this clas  s, simply invok  e assistActivity() on an Activity that already has its content view set.
 
     public static void assistActivity (Activity activity) {
         new AndroidBug5497Workaround(activity);

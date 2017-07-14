@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jsmosce.view.percentsuppor.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    android:orientation="vertical">
+
+    <com.jsmosce.view.TitleView
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="所属医院" />
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/home_title"
+        tools:openDrawer="start">
+
+        <View
+            android:id="@+id/home_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/home_title" />
+
+        <com.jsmosce.view.percentsuppor.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/roundbutton"
+
+                android:text="添加申请"
+                android:visibility="visible"
+                app:layout_heightPercent="@string/app_dp_100"
+                app:layout_textSizePercent="@string/app_dp_18"
+                app:layout_widthPercent="@string/app_dp_100" />
+
+            <com.cjj.MaterialRefreshLayout
+                android:id="@+id/home_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:isLoadMore="true"
+                app:overlay="true"
+                app:progress_colors="@array/material_colors"
+                app:progress_show_arrow="true"
+                app:progress_show_circle_backgroud="true"
+                app:wave_height_type="normal"
+                app:wave_show="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/show_evaluation_eva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGrayLight" />
+
+                <!--<com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader-->
+                <!--android:id="@+id/home_header"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal|top">-->
+
+                <!--<com.jsmosce.view.percentsuppor.PercentLinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorWhite"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="申请进程"-->
+                <!--android:textColor="@color/colorBlack"-->
+                <!--app:layout_marginTopPercent="@string/app_dp_14"-->
+                <!--app:layout_textSizePercent="@string/app_dp_16" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="若已通过直接点击考案进入下一步"-->
+                <!--app:layout_marginBottomPercent="@string/app_dp_14"-->
+                <!--app:layout_marginTopPercent="@string/app_dp_14"-->
+                <!--app:layout_textSizePercent="@string/app_dp_14" />-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:background="@color/colorGray"-->
+                <!--app:layout_heightPercent="@string/app_dp_1" />-->
+                <!--</com.jsmosce.view.percentsuppor.PercentLinearLayout>-->
+                <!--</com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>-->
+            </com.cjj.MaterialRefreshLayout>
+
+        </com.jsmosce.view.percentsuppor.PercentRelativeLayout>
+
+        <!--
+                <android.support.design.widget.NavigationView
+                    android:id="@+id/nav_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:fitsSystemWindows="true"
+                    app:headerLayout="@layout/nav_header_main"
+                    app:menu="@menu/activity_main_drawer" />-->
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</com.jsmosce.view.percentsuppor.PercentRelativeLayout>

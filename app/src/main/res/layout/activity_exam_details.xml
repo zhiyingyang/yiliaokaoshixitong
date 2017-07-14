@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <com.jsmosce.view.percentsuppor.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <com.jsmosce.view.TitleView
+            android:id="@+id/exam_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleText="新建项目" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jsmosce.view.percentsuppor.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <com.jsmosce.view.percentsuppor.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    app:layout_paddingPercent="@string/app_dp_12">
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/exam_kaoanbianhao"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="考案编号"-->
+                        <!--android:textColor="@color/colorBlack" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/exam_bianzhuangdanwei"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="编撰单位"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--app:layout_marginTopPercent="@string/app_dp_5" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/exam_ceyanhexing"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="测验核心"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--app:layout_marginTopPercent="@string/app_dp_5" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/exam_bianzhuanzhe"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="编撰者"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--app:layout_marginTopPercent="@string/app_dp_5" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/exam_kaoanmingchen"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="考案名称"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--app:layout_marginTopPercent="@string/app_dp_5" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/exam_ceyanmingchen"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="测验日期"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--app:layout_marginTopPercent="@string/app_dp_5" />-->
+
+
+                    <com.jsmosce.view.percentsuppor.PercentLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_marginTopPercent="@string/app_dp_12">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="主标题：    "
+                            android:textColor="@color/colorBlack"
+                            app:layout_textSizePercent="@string/app_dp_16" />
+
+                        <EditText
+                            android:id="@+id/exam_main_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="主标题"
+                            app:layout_textSizePercent="@string/app_dp_16" />
+
+
+                    </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+                    <com.jsmosce.view.percentsuppor.PercentLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_marginTopPercent="@string/app_dp_12">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="副标题：    "
+                            android:textColor="@color/colorBlack"
+                            app:layout_textSizePercent="@string/app_dp_16" />
+
+                        <EditText
+                            android:id="@+id/subtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="副标题"
+                            app:layout_textSizePercent="@string/app_dp_16" />
+
+                    </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="详细介绍："
+                        android:textColor="@color/colorBlack"
+                        app:layout_marginTopPercent="@string/app_dp_12" />
+
+                    <EditText
+                        android:id="@+id/exam_detailed_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="详细介绍"
+                        app:layout_heightPercent="@string/app_dp_150"
+                        app:layout_marginTopPercent="@string/app_dp_12"
+                        app:layout_textSizePercent="@string/app_dp_16" />
+
+                    <Button
+                        android:id="@+id/exam_true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttonshape"
+                        android:gravity="center"
+                        android:text="完成"
+                        android:textColor="@color/colorBlack"
+                        app:layout_heightPercent="@string/app_dp_43"
+                        app:layout_marginTopPercent="@string/app_dp_24"
+                        app:layout_textSizePercent="@string/app_dp_18" />
+                </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+            </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+        </ScrollView>
+    </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+

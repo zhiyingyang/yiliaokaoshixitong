@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jsmosce.view.percentsuppor.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:minHeight="?attr/actionBarSize"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请进程"
+        android:textColor="@color/colorBlack"
+        app:layout_marginTopPercent="@string/app_dp_14"
+        app:layout_textSizePercent="@string/app_dp_16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="若已通过直接点击考案进入下一步"
+        app:layout_marginBottomPercent="@string/app_dp_14"
+        app:layout_marginTopPercent="@string/app_dp_14"
+        app:layout_textSizePercent="@string/app_dp_14" />
+
+</com.jsmosce.view.percentsuppor.PercentLinearLayout>

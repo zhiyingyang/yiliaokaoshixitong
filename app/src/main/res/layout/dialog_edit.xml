@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jsmosce.view.percentsuppor.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_select_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/dengji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="等级"
+        android:theme="@style/MyEditText"
+        app:layout_marginTopPercent="@string/app_dp_8" />
+
+    <EditText
+        android:id="@+id/qujian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="分数"
+        android:inputType="number"
+        android:theme="@style/MyEditText"
+        app:layout_marginTopPercent="@string/app_dp_8" />
+
+</com.jsmosce.view.percentsuppor.PercentLinearLayout>

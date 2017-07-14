@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jsmosce.view.percentsuppor.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.jsmosce.activity.ScoreActivity">
+
+    <com.jsmosce.view.TitleView
+        android:id="@+id/score_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="考核表" />
+
+    <com.jsmosce.view.percentsuppor.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/score_title"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        app:layout_paddingLeftPercent="@string/app_dp_15"
+        app:layout_paddingRightPercent="@string/app_dp_15">
+
+        <!--<EditText-->
+        <!--android:id="@+id/name_test"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toRightOf="@+id/login_phone_img"-->
+        <!--android:background="@null"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="请输入考案名称"-->
+        <!--android:inputType="phone"-->
+        <!--android:maxLength="11"-->
+        <!--android:padding="0dp"-->
+        <!--android:textCursorDrawable="@null"-->
+        <!--app:layout_heightPercent="@string/app_dp_50"-->
+        <!--app:layout_marginLeftPercent="@string/app_dp_14"-->
+        <!--app:layout_marginTopPercent="@string/app_dp_30"-->
+        <!--app:layout_textSizePercent="@string/app_dp_14" />-->
+
+        <Button
+            android:id="@+id/button_xiangmu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            app:layout_textSizePercent="@string/app_dp_16"
+            app:layout_paddingPercent="@string/app_dp_10"
+
+            android:text="评分项目"
+            app:layout_marginTopPercent="@string/app_dp_82" />
+
+        <Button
+            android:id="@+id/button_jieguo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            app:layout_textSizePercent="@string/app_dp_16"
+            android:text="评分结果"
+            app:layout_paddingPercent="@string/app_dp_10"
+            app:layout_marginTopPercent="@string/app_dp_24" />
+
+    </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+</com.jsmosce.view.percentsuppor.PercentRelativeLayout>

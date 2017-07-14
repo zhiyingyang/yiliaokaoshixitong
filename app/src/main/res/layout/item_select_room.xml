@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jsmosce.view.percentsuppor.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_select_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_select_room_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="上午"
+        app:layout_marginPercent="@string/app_dp_15" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tem_select_room_rv"
+        android:layout_width="match_parent"
+        android:background="@color/colorGrayLight"
+        android:layout_height="wrap_content" />
+</com.jsmosce.view.percentsuppor.PercentLinearLayout>

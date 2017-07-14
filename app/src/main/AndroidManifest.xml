@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Android="http://schemas.android.com/apk/res-auto"
+    package="com.jsmosce">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 在SD卡中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 向SD卡写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- PackageManager权限 -->
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"   
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.StartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".base.BaseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.PasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ApplicantActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TestApplicationActivity"
+            android:label="@string/title_activity_test_application"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.TestDesignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExaminationRoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CaseItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ArticleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScoreDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RatingItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExamDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".activity.CandidatesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScoreResultsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScoreingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CaseListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HistoryDepartmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CandidatesHistoryListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HistoryCandidatesDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CandidatesManagementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CandidatesAllListActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

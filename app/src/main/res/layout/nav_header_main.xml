@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jsmosce.view.percentsuppor.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="bottom"
+    android:background="@drawable/shape"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:id="@+id/home_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_textSizePercent="@string/app_dp_18"
+        android:layout_toRightOf="@+id/home_userImg"
+        android:text="用户名"
+        android:textColor="@color/colorBlack"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/home_yiyuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_userName"
+        android:layout_toRightOf="@+id/home_userImg"
+        android:text="所属科室"
+        android:textColor="@color/colorBlack"/>
+
+   <!-- <com.jsmosce.view.RoundImageView
+        android:id="@+id/home_userImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/user_photo"
+        app:layout_heightPercent="@string/app_dp_50"
+        app:layout_marginRightPercent="@string/app_dp_14"
+        app:layout_widthPercent="@string/app_dp_50"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />-->
+
+</com.jsmosce.view.percentsuppor.PercentRelativeLayout>

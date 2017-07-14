@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jsmosce.view.percentsuppor.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.jsmosce.activity.HistoryCandidatesDetailsActivity">
+
+    <com.jsmosce.view.TitleView
+        android:id="@+id/score_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="考试结果" />
+
+    <com.jsmosce.view.percentsuppor.PercentLinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score_title"
+        android:orientation="horizontal"
+        app:layout_paddingPercent="@string/app_dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="@string/app_dp_16"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="考核项目"
+            android:textColor="@color/colorBlack"
+            app:layout_widthPercent="@string/app_dp_120" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="分数"
+            app:layout_textSizePercent="@string/app_dp_16"
+            android:textColor="@color/colorBlack"
+            app:layout_widthPercent="@string/app_dp_120" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="等级"
+            app:layout_textSizePercent="@string/app_dp_16"
+            android:textColor="@color/colorBlack"
+            app:layout_widthPercent="@string/app_dp_120" />
+    </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/history_candidates_details_rv"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/article_add"
+        android:layout_below="@+id/top"
+        android:background="@color/colorGrayLight" />
+</com.jsmosce.view.percentsuppor.PercentRelativeLayout>

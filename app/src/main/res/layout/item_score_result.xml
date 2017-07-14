@@ -1,0 +1,61 @@
+<com.jsmosce.view.percentsuppor.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_select_room_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_heightPercent="@string/app_dp_60">
+
+        <com.jsmosce.view.percentsuppor.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            app:layout_heightPercent="@string/app_dp_60">
+
+            <TextView
+                android:id="@+id/item_score_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="项目名称"
+                android:textColor="@color/colorBlack"
+                app:layout_widthPercent="@string/app_dp_120"
+                app:layout_textSizePercent="@string/app_dp_16" />
+
+            <TextView
+                android:id="@+id/item_score_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/item_score_item"
+                android:gravity="center"
+                android:text="分数区间"
+                android:textColor="@color/colorBlack"
+                app:layout_widthPercent="@string/app_dp_120"
+                app:layout_textSizePercent="@string/app_dp_15" />
+
+            <TextView
+                android:id="@+id/item_score_dengji"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/item_score_item"
+                android:gravity="center"
+                android:text="分数区间"
+                android:textColor="@color/colorBlack"
+                app:layout_widthPercent="@string/app_dp_120"
+                app:layout_textSizePercent="@string/app_dp_15" />
+        </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</com.jsmosce.view.percentsuppor.PercentLinearLayout>

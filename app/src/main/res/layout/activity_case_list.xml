@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jsmosce.view.percentsuppor.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayLight"
+    tools:context="com.jsmosce.activity.CaseListActivity">
+
+    <com.jsmosce.view.TitleView
+        android:id="@+id/case_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="已有考案" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/case_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/case_list_title" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="45dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:menu_backgroundColor="#ccffffff"
+        app:menu_colorNormal="@color/colorBule"
+        app:menu_colorPressed="@color/colorBule"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_singleLine="true"></com.github.clans.fab.FloatingActionMenu>
+
+
+</com.jsmosce.view.percentsuppor.PercentRelativeLayout>

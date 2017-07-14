@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jsmosce.view.percentsuppor.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_select_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myborderwrite"
+    android:orientation="vertical">
+
+    <com.jsmosce.view.percentsuppor.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_paddingPercent="@string/app_dp_30">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_app"
+            app:layout_heightPercent="@string/app_dp_50"
+            app:layout_widthPercent="@string/app_dp_50" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="版本更新"
+            android:textColor="@color/colorBlack"
+            app:layout_marginTopPercent="@string/app_dp_20"
+            app:layout_textSizePercent="@string/app_dp_18" />
+
+        <TextView
+            android:id="@+id/updata_Introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新简介"
+            android:textColor="@color/colorBlack"
+            app:layout_marginTopPercent="@string/app_dp_20"
+            app:layout_textSizePercent="@string/app_dp_18" />
+
+    </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayLight"
+        app:layout_heightPercent="@string/app_dp_1"
+        app:layout_marginTopPercent="@string/app_dp_20" />
+
+
+    <com.jsmosce.view.percentsuppor.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/updata_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="稍后再说"
+            android:textColor="@color/btninvalid"
+            app:layout_heightPercent="@string/app_dp_50" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrayLight"
+            app:layout_heightPercent="@string/app_dp_50"
+            app:layout_widthPercent="@string/app_dp_1" />
+
+        <Button
+            android:id="@+id/updata_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="立即下载"
+            android:textColor="@color/btninvalid"
+            app:layout_heightPercent="@string/app_dp_50" />
+    </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+</com.jsmosce.view.percentsuppor.PercentLinearLayout>

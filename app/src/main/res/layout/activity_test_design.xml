@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jsmosce.view.percentsuppor.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".activity.TestDesignActivity">
+
+    <com.jsmosce.view.TitleView
+        android:id="@+id/test_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="排程设计" />
+
+    <TextView
+        android:id="@+id/kaoanhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="考案号:xxxx"
+        android:textColor="@color/colorBlack"
+        app:layout_marginLeftPercent="@string/app_dp_14"
+        app:layout_marginTopPercent="@string/app_dp_60"
+        app:layout_textSizePercent="@string/app_dp_14" />
+
+
+    <com.jsmosce.view.percentsuppor.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_marginTopPercent="@string/app_dp_10"
+        app:layout_paddingLeftPercent="@string/app_dp_15"
+        app:layout_paddingRightPercent="@string/app_dp_15">
+
+        <com.jsmosce.view.percentsuppor.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_heightPercent="@string/app_dp_40">
+
+            <EditText
+                android:id="@+id/test_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入考案名"
+                android:padding="0dp"
+                android:textCursorDrawable="@null"
+                app:layout_textSizePercent="@string/app_dp_14" />
+
+        </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray"
+            app:layout_heightPercent="@string/app_dp_1" />
+
+        <com.jsmosce.view.percentsuppor.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jsmosce.view.percentsuppor.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_heightPercent="@string/app_dp_40"
+                app:layout_marginTopPercent="@string/app_dp_20">
+
+                <EditText
+                    android:id="@+id/test_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="申请人姓名"
+                    android:padding="0dp"
+                    android:textCursorDrawable="@null"
+                    app:layout_textSizePercent="@string/app_dp_14"
+                    app:layout_widthPercent="@string/app_dp_180" />
+
+
+            </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray"
+                app:layout_heightPercent="@string/app_dp_1" />
+
+            <com.jsmosce.view.percentsuppor.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_heightPercent="@string/app_dp_40"
+                app:layout_marginTopPercent="@string/app_dp_20">
+
+
+                <TextView
+                    android:id="@+id/yuding_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="预定日期"
+                    android:inputType="phone"
+                    android:maxEms="11"
+                    android:padding="0dp"
+                    android:textCursorDrawable="@null"
+                    app:layout_textSizePercent="@string/app_dp_14" />
+
+            </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray"
+                app:layout_heightPercent="@string/app_dp_1" />
+
+
+            <com.jsmosce.view.percentsuppor.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_heightPercent="@string/app_dp_40"
+                app:layout_marginTopPercent="@string/app_dp_20">
+
+
+                <TextView
+                    android:id="@+id/ceyan_tiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="测验日期"
+                    android:inputType="phone"
+                    android:maxEms="11"
+                    android:padding="0dp"
+                    android:textCursorDrawable="@null"
+                    app:layout_textSizePercent="@string/app_dp_14" />
+
+            </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray"
+                app:layout_heightPercent="@string/app_dp_1" />
+
+            <com.jsmosce.view.percentsuppor.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_heightPercent="@string/app_dp_40"
+                app:layout_marginTopPercent="@string/app_dp_20">
+
+
+                <TextView
+                    android:id="@+id/test_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="考场地点"
+                    android:inputType="phone"
+                    android:maxEms="11"
+                    android:padding="0dp"
+                    android:textCursorDrawable="@null"
+                    app:layout_textSizePercent="@string/app_dp_14" />
+
+            </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray"
+                app:layout_heightPercent="@string/app_dp_1" />
+
+
+            <Button
+                android:id="@+id/test_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/colorBlack"
+                app:layout_heightPercent="@string/app_dp_43"
+                app:layout_marginTopPercent="@string/app_dp_24"
+                app:layout_textSizePercent="@string/app_dp_18" />
+
+            <Button
+                android:id="@+id/test_jump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:gravity="center"
+                android:text="跳过"
+                android:textColor="@color/colorBlack"
+                app:layout_heightPercent="@string/app_dp_43"
+                app:layout_marginTopPercent="@string/app_dp_24"
+                app:layout_textSizePercent="@string/app_dp_18" />
+
+        </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+
+    </com.jsmosce.view.percentsuppor.PercentLinearLayout>
+
+
+</com.jsmosce.view.percentsuppor.PercentLinearLayout>

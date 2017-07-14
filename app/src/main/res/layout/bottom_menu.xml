@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jsmosce.view.percentsuppor.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_menu_LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlackLight"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bottom_menu_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_menu_View"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="拍照"
+        android:textColor="@color/colorBlack"
+        app:layout_heightPercent="@string/app_dp_40"
+        app:layout_marginTopPercent="@string/app_dp_10"
+        app:layout_textSizePercent="@string/app_dp_14"
+        app:layout_widthPercent="@string/app_dp_360" />
+
+    <View
+        android:id="@+id/bottom_menu_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_menu_PhotoGallery"
+        android:background="@color/colorGray"
+        app:layout_heightPercent="@string/app_dp_1"></View>
+
+    <TextView
+        android:id="@+id/bottom_menu_PhotoGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_menu_cancel"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="从相册选择"
+        android:textColor="@color/colorBlack"
+        app:layout_heightPercent="@string/app_dp_40"
+        app:layout_textSizePercent="@string/app_dp_14"
+        app:layout_widthPercent="@string/app_dp_360" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_menu_cancel"
+        android:background="@color/colorGray"
+        app:layout_heightPercent="@string/app_dp_1"></View>
+
+    <TextView
+        android:id="@+id/bottom_menu_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/colorBlack"
+        app:layout_heightPercent="@string/app_dp_40"
+        app:layout_marginBottomPercent="@string/app_dp_10"
+        app:layout_textSizePercent="@string/app_dp_14"
+        app:layout_widthPercent="@string/app_dp_360" />
+
+</com.jsmosce.view.percentsuppor.PercentRelativeLayout>
